@@ -37,7 +37,14 @@
 </style>
 
 <body>
-
+  <%if(message){%>
+    <div class="alert alert-success alert-dismissible fade show" role="alert"
+      style="position: absolute ;width: 100% ; height: 47px; padding-top:10px ;">
+      <%=message%>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+          style="padding: 0.9rem 1rem;"></button>
+    </div>
+    <%}%>
   <section class="vh-100 gradient-custom">
     <div class="container py-5 h-100">
       <div class="row justify-content-center align-items-center h-100">
